@@ -1,0 +1,55 @@
+.register-form {
+  text-align: center;
+}
+
+::-webkit-input-placeholder {
+  text-align: center;
+}
+
+.form-input-register {
+  padding: 10px;
+  margin-top: 10px;
+  width: 50%;
+  background-color: #343434;
+  border-style: none;
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+}
+
+.form-input-register:focus{
+  outline: none;
+  border: 2px solid #38ef7d;
+  border-radius: 10px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  display: inline;
+  position: relative;
+  overflow: hidden;
+}
+
+a:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  width: 0;
+  bottom: -5px;
+  background: #000;
+  height: 2px;
+  transition-property: width;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+
+a:hover:after,
+a:focus:after,
+a:active:after {
+  left: 0;
+  right: auto;
+  width: 100%;
+}
