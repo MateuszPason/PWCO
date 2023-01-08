@@ -63,7 +63,7 @@ if((isset($_SESSION['loggedInUser'])) && ($_SESSION['loggedInUser'] == true)) {
 
   <?php
   try {
-    $conn = new mysqli($servername, $username, $passwordDb, $database);
+    $conn = new mysqli("mysqlserverblog.database.windows.net", "blog_database", "azureuser", "Matiaszko12!");
     if($conn->connect_errno != 0) {
       throw new Exception(mysqli_connect_errno());
     } else {
